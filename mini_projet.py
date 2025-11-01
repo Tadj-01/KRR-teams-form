@@ -20,15 +20,12 @@ with st.form("student_form"):
     submitted = st.form_submit_button("Submit")
 
 if submitted:
-    # Validation
+    
     if not (first1 and last1):
         st.warning("⚠️ Please fill in at least Student 1 information.")
     elif (first2 and not last2) or (last2 and not first2):
-        st.warning("⚠️ Please fill in all fields before submitting.")  # ✅ your line
+        st.warning("⚠️ Please fill in all fields before submitting.")  
     else:
-        if not first2 and not last2 :
-            first2 = "/"
-            last2 = "/"
         data = {
             "first1": first1,
             "last1": last1,
