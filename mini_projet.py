@@ -26,6 +26,9 @@ if submitted:
     elif (first2 and not last2) or (last2 and not first2):
         st.warning("⚠️ Please fill in all fields before submitting.")  # ✅ your line
     else:
+        if not first2 and not last2 :
+            first2 = "/"
+            last2 = "/"
         data = {
             "first1": first1,
             "last1": last1,
