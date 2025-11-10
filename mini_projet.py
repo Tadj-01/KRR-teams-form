@@ -5,6 +5,7 @@ import requests
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwxOK8vFy1PtkvhqBFjonjgrBAIGXOOedolvH1b8MqOpOG9gW4Iab1b0UPBxzTDSCAE/exec"
 
 st.set_page_config(page_title="Presentation Members Form")
+st.title("🎓 A.I Presentation Members Form")
 st.write("Each row represents one team of three students. Please fill all fields. No duplicates allowed.")
 
 with st.form("student_form"):
